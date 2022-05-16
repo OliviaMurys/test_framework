@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Transactions" parallel="false">
+    <listeners>
+        <listener class-name="core.listeners.WebDriverListener"/>
+    </listeners>
+    <test name="Login">
+        <packages>
+            <package name="tests.login"/>
+        </packages>
+    </test>
+    <test name="Product">
+        <packages>
+            <package name="tests.product"/>
+        </packages>
+    </test>
+</suite>
